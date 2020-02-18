@@ -396,6 +396,7 @@ export function getCommonConfig(wco: WebpackConfigOptions): Configuration {
             ecma: 5,
           },
           mangle: !manglingDisabled && buildOptions.platform !== 'server',
+          keep_classnames: true
         },
       }),
     );
